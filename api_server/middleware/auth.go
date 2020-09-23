@@ -28,7 +28,11 @@ func Auth(user service.UserService) gin.HandlerFunc {
 			c.Next()
 		} else {
 			Logging.Error("Get Cookie Err:", getCookieErr)
-
+			c.AbortWithStatusJSON(http.StatusOK, Response.APIResponse{
+				Code:    ErrorCode.AuthErr.NumString(),
+				Status:  Response.FAIL.String(),
+				Message: ErrorCode.AuthErr.String(),
+			})
 			return
 		}
 	}
