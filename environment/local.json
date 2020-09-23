@@ -3,7 +3,7 @@
   "log_level": 0,
   "log_mode": 0,
   "server": {
-    "port": 8081
+    "port": 8745
   }
 }
 

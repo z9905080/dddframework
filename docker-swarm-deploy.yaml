@@ -1,0 +1,16 @@
+version: "3"
+services:
+  ddd-api:
+    image: z9905080/ddd-framework:${version_id}
+    environment:
+      - ENV=${ENV}
+      - TZ=Asia/Taipei
+    ports:
+      - "8745:8745"
+    command: "./app --cmd=api"
+    deploy:
+      replicas: 3
+    networks:
+      - gr-game
+networks:
+  gr-game:
