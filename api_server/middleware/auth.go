@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"dddframework/api_server/entity/service"
+	"dddframework/api_server/entity"
 	ErrorCode "dddframework/api_server/error_code"
 	Response "dddframework/api_server/response"
 	"github.com/gin-gonic/gin"
@@ -10,7 +10,7 @@ import (
 )
 
 // Auth 檢查驗證
-func Auth(user service.UserService) gin.HandlerFunc {
+func Auth(user entity.UserService) gin.HandlerFunc {
 	return func(c *gin.Context) {
 
 		if userToken, getCookieErr := c.Cookie("user_token"); getCookieErr == nil {

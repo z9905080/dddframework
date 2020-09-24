@@ -211,6 +211,8 @@ github.com/ugorji/go v1.1.7/go.mod h1:kZn38zHttfInRq0xu/PH0az30d+z6vm202qpg1oXVM
 github.com/ugorji/go/codec v1.1.7 h1:2SvQaVZ1ouYrrKKwoSk2pzd4A9evlKJb9oTL+OaLUSs=
 github.com/ugorji/go/codec v1.1.7/go.mod h1:Ax+UKWsSmolVDwsd+7N3ZtXu+yMGCf907BLYF3GoBXY=
 github.com/xiang90/probing v0.0.0-20190116061207-43a291ad63a2/go.mod h1:UETIi67q53MR2AWcXfiuqkDkRtnGDLqkBTpCHuJHxtU=
+github.com/z9905080/gin-di-router v0.0.2 h1:pXh1/eHkS7U5RQlo6ZWJnAC4SXQ3Q1HvP2bmEIKvx5E=
+github.com/z9905080/gin-di-router v0.0.2/go.mod h1:WwF0ksP6Z8rY97kGBXFQR2qDs69r1xyznhKtCStYRMk=
 github.com/z9905080/gloger v0.0.10 h1:v5dIcg43+YkzvZLxuEsXrIpiOF/gAGW7ZT6J7FxvbsE=
 github.com/z9905080/gloger v0.0.10/go.mod h1:q7Mnqn7w54lnyC4imaZTKsZcym4KdRDXLlXuJbIk3YE=
 github.com/z9905080/melody v1.2.3 h1:KS/atgGWBYA3gklw5wGjY6Jw0p37jhS2Izs6HkW7ciU=

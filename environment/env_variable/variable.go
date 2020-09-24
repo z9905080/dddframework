@@ -2,7 +2,6 @@ package env_variable
 
 import (
 	"github.com/spf13/viper"
-	"github.com/subosito/gotenv"
 	"os"
 )
 
@@ -20,7 +19,7 @@ func init() {
 
 func getEnvPath() string {
 	// .env 讀取
-	gotenv.Load()
+	// gotenv.Load()
 	env := os.Getenv("ENV")
 	return "environment/" + env + ".json"
 }

@@ -5,11 +5,7 @@ type Msg struct {
 	Provider string `json:"provider"`
 }
 
-//func (super *Msg) Auth(token string) (Msg, error) {
-//	return Msg{
-//		Token:    token,
-//		Name:     "Default",
-//		Password: "Default",
-//		Provider: "Default",
-//	}, nil
-//}
+type MsgService interface {
+	GetMsg() ([]Msg, error)
+	EditMsg() ([]Msg, error)
+}
