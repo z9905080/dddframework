@@ -29,7 +29,7 @@ func SetRoute(server *gin.Engine) {
 
 	{
 		// Google API設定
-		GoogleSettingGroup := routerEntity.EntityServer.Group("", Middleware.Auth(new(adapter.GoogleUserService)))
+		GoogleSettingGroup := routerEntity.EntityServer.Group("google", Middleware.Auth(new(adapter.GoogleUserService)))
 		// API
 		registry := GinDIGroup.New(GoogleSettingGroup)
 		registry.RegisterWithGroup(new(Cmd.CmdController), GoogleSettingGroup)
@@ -37,7 +37,7 @@ func SetRoute(server *gin.Engine) {
 
 	{
 		// Google API設定
-		FbSettingGroup := routerEntity.EntityServer.Group("", Middleware.Auth(&adapter.FacebookUserService{FacebookToken: "FBT"}))
+		FbSettingGroup := routerEntity.EntityServer.Group("fb", Middleware.Auth(&adapter.FacebookUserService{FacebookToken: "FBT"}))
 		// API
 		registry := GinDIGroup.New(FbSettingGroup)
 		registry.RegisterWithGroup(new(Cmd.CmdController), FbSettingGroup)

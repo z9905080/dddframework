@@ -8,5 +8,5 @@ import (
 var MsgInstance entity.MsgService
 
 func init() {
-	MsgInstance = new(adapter.MysqlMsgService)
+	MsgInstance = new(adapter.MsgAdapter)
 }

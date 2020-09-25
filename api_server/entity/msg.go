@@ -7,5 +7,4 @@ type Msg struct {
 
 type MsgService interface {
 	GetMsg() ([]Msg, error)
-	EditMsg() ([]Msg, error)
 }
